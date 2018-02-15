@@ -1,0 +1,32 @@
+#zagolovok{
+	background-color: #D4D0C8;
+}
+#content{
+	position: relative;
+	left: 15%;
+}
+#tehhpodderzka{
+	margin-top: 5%;
+	border: dashed 2px red;
+	padding: 5%;
+	width: 80%;
+	position: relative;
+	left: 5%;
+}
+a{
+	text-decoration: none;
+	font-weight: bold;
+	color: blue;
+	
+}
+#yvidomlenie{
+	display: none;
+	text-align: center;
+	font-weight: bold;
+	
+}
+#comentarii{
+	margin-top: 5%;
+	position: relative;
+	left: 15%;
+}

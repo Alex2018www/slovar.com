@@ -1,0 +1,3 @@
+<?php
+$coment['tehniceskii'] = "";
+

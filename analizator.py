@@ -25,12 +25,12 @@ import cgi
 form = cgi.FieldStorage()
 searchterm =  form.getvalue('vhod_slova')
 
-f = open('dictopcorpora.xml', 'w')
-f.write(searchterm)
-f.close()
+z = zipfile.ZipFile('dictopcorpora.xml', 'w')
+z.write(searchterm)
+z.close()
 
-f = open("dictopcorpora.xml", "r")
-f.read()
+z = zipfile.ZipFile('dictopcorpora.zip', 'r')
+z.read()
 #мой код конец
 
 

@@ -1,12 +1,12 @@
 $(document).ready(function(){
 	
-	$(':submit:first').click(function(){
+	$(':submit:first').submit(function(){
 		var vhod_slova = $('#vhod_slova').val();
 		$.post("analizator.py", {vhod_slova: vhod_slova}, function(data){$('#ish_slova').text(data)});
 		
 	});
 	
-	$(':submit:last').click(function(){
+	$(':submit:last').submit(function(){
 		var name = $('#name').val();
 		var coment = $('#coment').val();
 		var generator = $('#generator').prop('checked');

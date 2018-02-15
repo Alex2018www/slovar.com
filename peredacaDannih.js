@@ -2,7 +2,7 @@ $(document).ready(function(){
 	
 	$(':submit:first').click(function(){
 		var vhod_slova = $('#vhod_slova').val();
-		$.post("cgi-bin/analizator.py", {vhod_slova: vhod_slova}, function(data){$('#ish_slova').text(data)});
+		$.post("analizator.py", {vhod_slova: vhod_slova}, function(data){$('#ish_slova').text(data)});
 		
 	});
 	

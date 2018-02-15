@@ -23,7 +23,7 @@ auto = object()
 
 import cgi
 form = cgi.FieldStorage()
-searchterm =  formpostvalue('vhod_slova')
+searchterm =  form.postvalue('vhod_slova')
 
 z = zipfile.ZipFile('dictopcorpora.xml', 'w')
 z.write(searchterm)

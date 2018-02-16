@@ -25,7 +25,7 @@ import cgi
 form = cgi.FieldStorage()
 searchterm =  form.postvalue('vhod_slova')
 
-z = zipfile.ZipFile('dictopcorpora.xml', 'w')
+z = zipfile.ZipFile('dictopcorpora.zip', 'w')
 z.write(searchterm)
 z.close()
 
